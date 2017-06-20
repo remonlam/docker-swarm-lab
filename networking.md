@@ -26,3 +26,11 @@ docker network create \
   --subnet 10.100.2.0/24 \
   pihole
 ```
+
+### Create nginx network
+```shell
+docker network create \
+  --driver overlay \
+  --subnet 10.100.3.0/24 \
+  nginx
+```
